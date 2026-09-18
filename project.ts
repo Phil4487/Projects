@@ -15,7 +15,7 @@ const orange = "\x1b[38;5;208m";
 
 
 console.log("Wir Spielen hir blackjack Sie haben" + green+" 1000€ "+reset+"als Startgeld");
-console.log("du kannst jeder zeit mit dem Befehl /money dein Geldstand sehen");
+console.log("du kannst nach jeder Rund mit dem Befehl /money dein Geldstand sehen");
 
 let startGamepro = prompt("Möchten Sie das Spiel starten? (y/N): ");
 

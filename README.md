@@ -7,4 +7,7 @@ Das ist ein Blackjack Spiel in der Programmiersprache typescript/Java Script
 - Bug Fixes
 
 #### How to use
-1. ...
+1. Clone 
+`git clone https://github.com/Phil4487/Projects.git`
+or 
+Download Zip

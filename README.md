@@ -5,3 +5,6 @@ Das ist ein Blackjack Spiel in der Programmiersprache typescript/Java Script
 - Farben
 - Bug Fixes
 - Bug Fixes
+
+#### How to use
+1. ...

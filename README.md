@@ -2,9 +2,10 @@
 Das ist ein Blackjack Spiel in der Programmiersprache typescript/Java Script
 
 #### In Arbeit
-- Farben
+- Colors
 - Bug Fixes
 - Bug Fixes
+- kein Doppel Ass
 
 #### How to use
 1. Clone 

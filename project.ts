@@ -134,7 +134,7 @@ while (!isGameOver) {
         console.log("Dealer hat überkauft! Du gewinnst!")
         moneyvalue += setedMoney * 2;
     } else if (dealerTotal >= playerTotal) {
-        console.log("Dealer gewinnt mit " + dealerTotal + " gegen deine " + playerTotal + ".");
+        console.log(orange+"Dealer gewinnt"+reset+ " mit " + dealerTotal + " gegen deine " + playerTotal + ".");
         console.error();
         
     } else if (playerTotal > dealerTotal) {

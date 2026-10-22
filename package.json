@@ -20,6 +20,7 @@
     "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
-    "@types/node": "^22.20.3"
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15"
   }
 }

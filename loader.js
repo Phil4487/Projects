@@ -6,7 +6,7 @@
  *   // ... Arbeit ...
  *   loader.stop();
  */
-export function startSoftLoader(message = 'Lade Daten', intervalMs = 300, cycles = 3) {
+export function startSoftLoader(message = 'Lade Daten', intervalMs = 300, cycles = 2) {
     let frame = 0;
     const totalFrames = cycles * 4;
     process.stdout.write('\x1B[?25l');

@@ -8,6 +8,12 @@ const red = '\x1b[31m';
 const blue = '\x1b[34m';
 const green = '\x1b[32m';
 const orange = '\x1b[38;5;208m';
+console.log("██████╗ ██╗      █████╗  ██████╗██╗  ██╗     ██╗ █████╗  ██████╗██╗  ██╗ ");
+console.log("██╔══██╗██║     ██╔══██╗██╔════╝██║ ██╔╝     ██║██╔══██╗██╔════╝██║ ██╔╝ ");
+console.log("██████╔╝██║     ███████║██║     █████╔╝      ██║███████║██║     █████╔╝  ");
+console.log("██╔══██╗██║     ██╔══██║██║     ██╔═██╗ ██   ██║██╔══██║██║     ██╔═██╗  ");
+console.log("██████╔╝███████╗██║  ██║╚██████╗██║  ██╗╚█████╔╝██║  ██║╚██████╗██║  ██╗ ");
+console.log("╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ");
 console.log('Wir spielen Blackjack. Sie haben ' + green + '1000€ ' + reset + 'als Startgeld');
 console.log('Du kannst nach jeder Runde mit dem Befehl /money deinen Geldstand sehen.');
 const startGamepro = prompt('Möchten Sie das Spiel starten? (' + green + 'y' + reset + '/' + red + 'N' + reset + '): ');
@@ -18,7 +24,7 @@ if (startAnswer === 'y' || startAnswer === 'yes' || startAnswer === 'ja' || star
         loader.stop();
         console.log(green + 'Das Spiel startet jetzt!\n' + reset);
         startGameLoop();
-    }, 5000);
+    }, 3000);
 }
 else {
     console.log(red + 'Das Spiel wird beendet.' + reset);
@@ -38,7 +44,7 @@ function startGameLoop() {
             console.log('Du hast kein Geld mehr! Das Spiel ist vorbei.' + reset);
             break;
         }
-        const setMoneypro = prompt('Wie viel möchtest du setzen? ');
+        const setMoneypro = prompt('Wie viel möchtest du setzen? (z. B. 1k für 1000) ');
         if (setMoneypro === null || setMoneypro.toLowerCase() === 'exit') {
             console.log('Spiel beendet.');
             break;
@@ -47,7 +53,10 @@ function startGameLoop() {
             console.log('Kontostand: ' + moneyvalue + '€\n');
             continue;
         }
-        const setedMoney = Number(setMoneypro);
+        const normalizedSetMoney = setMoneypro.trim();
+        const setedMoney = normalizedSetMoney.toLowerCase().endsWith('k')
+            ? Number(normalizedSetMoney.slice(0, -1)) * 1000
+            : Number(normalizedSetMoney);
         if (!Number.isFinite(setedMoney) || setedMoney <= 0) {
             console.error(red + 'Ungültiger Betrag! Bitte geben Sie eine positive Zahl ein.\n' + reset);
             continue;

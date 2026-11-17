@@ -9,7 +9,7 @@
 export function startSoftLoader(
   message: string = 'Lade Daten',
   intervalMs: number = 300,
-  cycles: number = 3
+  cycles: number = 2
 ) {
   let frame = 0;
   const totalFrames = cycles * 4;

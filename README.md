@@ -1,13 +1,15 @@
 ### Project Blackjack
-Das ist ein Blackjack Spiel in der Programmiersprache typescript/Java Script
+Its an test Blackjack game based on Typescript
 
-#### In Arbeit
+#### Work
 - Bug Fixes
 - Bug Fixes
-- kein Doppel Ass
+- No dubble Ace
 
 #### How to use
 1. Clone 
 `git clone https://github.com/Phil4487/Projects.git`
-or 
-Download Zip
+
+2. install NodeJS: `winget install OpenJS.NodeJS.LTS`
+
+3. To start: `node Blackjack.js` 
